@@ -18,7 +18,7 @@ public class IndividualTest {
      * Test of getNextState method, of class Individual.
      */
     @Test
-    public void testGetNextState1() {
+    public void testEvalNextState1() {
         System.out.println("getNextState S->S");
         List<Individual> neighbours = Utils.createList();
         neighbours.add(new Individual(Individual.State.S));
@@ -33,7 +33,7 @@ public class IndividualTest {
     }
 
     @Test
-    public void testGetNextState2() {
+    public void testEvalNextState2() {
         System.out.println("getNextState S->I");
         List<Individual> neighbours = Utils.createList();
         neighbours.add(new Individual(Individual.State.S));
@@ -48,7 +48,7 @@ public class IndividualTest {
     }
 
     @Test
-    public void testGetNextState3() {
+    public void testEvalNextState3() {
         System.out.println("getNextState I->I");
         List<Individual> neighbours = Utils.createList();
         neighbours.add(new Individual(Individual.State.S));
@@ -63,7 +63,7 @@ public class IndividualTest {
     }
 
     @Test
-    public void testGetNextState4() {
+    public void testEvalNextState4() {
         System.out.println("getNextState I->R");
         List<Individual> neighbours = Utils.createList();
         neighbours.add(new Individual(Individual.State.S));
